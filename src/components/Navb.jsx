@@ -22,15 +22,12 @@ const Navb = (props) => {
             <section className="navs">
                 <nav className="navbar navbar-light bg-light d-flex justify-conternt-end">
                     <div className="container">
-                        <NavLink to="/" className="navbar-brand">Start Boostrap</NavLink>
+                        <NavLink to="/" className="navbar-brand">Start Bootstrap</NavLink>
                     </div>
                     <div>
                         <Button color="white" className="ml-auto" onClick={toggle}>{buttonLabel}<span className="cart-area"><i className="fas fa-shopping-cart"></i><span className="cart mx-2 text-bold">Cart</span><span className="cart-no mx-2 text-white">{cartItemlength}</span></span></Button>
                         <Modal isOpen={modal} toggle={toggle} className={className} external={externalCloseBtn}>
                             <ModalHeader>My Cart</ModalHeader>
-                            <ModalFooter>
-                                <Button color="secondary" onClick={toggle}>X</Button>
-                            </ModalFooter>
                             <ModalBody>
                                 <div className="container ">
                                     <Row>
