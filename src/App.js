@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import './App.css';
-import data from './components/data';
-import Navbar from './components/Navbar';
-import Card from './components/Card';
-import Heading from './components/Heading';
-import Footer from './components/Footer';
+import data from './data';
+import Cars from './components/Cars';
+import 'bootstrap/dist/css/bootstrap.css';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import Navb from './components/Navb';
+import Footers from './components/Footers';
+import Headers from './components/Headers';
+
 
 
 
@@ -28,10 +30,10 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar cartItemlength={cartItems.length} cartItems={cartItems} onRemove={onRemove} />
-        <Heading />
-        <Card products={products} cartItems={cartItems} onAdd={onAdd} />
-        <Footer />
+        <Navb cartItemlength={cartItems.length} cartItems={cartItems} onRemove={onRemove} />
+        <Headers />
+        <Cars products={products} cartItems={cartItems} onAdd={onAdd} />
+        <Footers />
       </Router>
     </>
   );

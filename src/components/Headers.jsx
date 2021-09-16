@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Heading = () => {
+const Headers = () => {
     return (
         <header>
             <h1 className="text-white text-center">Shop in style</h1>
             <p className="text-white text-center">With this shop hompeage template</p>
-        </header>   
+        </header>
     )
 }
 
-export default Heading
+export default Headers
