@@ -1,52 +1,99 @@
 *{
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 footer{
   width: 100%;
   padding:2% ;
   background-color:black;
-  
 }
+
 header{
   width: 100%;
   height: 50vh;
   background-color: black;
 }
+
 h1{
   position: relative;
   top: 40%;
   font-size: 3rem;
-  
 }
+
 p{
-   position: relative;
+  position: relative;
   top: 42%;
-  
 }
+
 .cart-area{
   border:1px solid black;
   padding: 5px;
   border-radius: 2px;
   z-index: -2;
 }
+
 .cart-no{
  border:1px solid black;
  border-radius: 10px;
  padding: 2px;
  background-color:black;
 }
+
 .cart{
   text-decoration: none;
   color: black;
 }
+
 .cart:hover{
   color:red;
 }
-.navs{
+
+.navbars{
 position: fixed;
 top: 0;
 right: 0;
 left: 0;
 z-index: 1;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+}
+
+.card-price{
+  margin-top: 0.2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  
+}
+
+.card-type{
+  margin-top: 0.2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .item{
+   display: inline-block;
+
+   }
+   .card-price{
+     margin-left:2.5rem;
+   }
+   .card-type{
+     margin-left: 10%;
+     width: 100%;
+   }
+   .card-img{
+     margin-left: 2.5rem;
+     width: 100%;
+    
+   }
+   .card-btn{
+     margin-left: 3rem;
+   }
 }

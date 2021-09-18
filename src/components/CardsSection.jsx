@@ -3,7 +3,7 @@ import { Card, Button, CardText, Row, Col } from 'reactstrap';
 import ReactStars from "react-rating-stars-component";
 
 
-const Cars = (props) => {
+const CardsSection = (props) => {
     const { products, onAdd, cartItems } = props
     return (
         <div className="container-fluid">
@@ -31,4 +31,4 @@ const Cars = (props) => {
     );
 };
 
-export default Cars;
+export default CardsSection;
